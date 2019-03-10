@@ -7,7 +7,19 @@
       <setting-ref ref="vcsTrigger" />
     </disabled-settings>
     <parameters />
-    <build-runners />
+    <build-runners>
+      <runner id="RUNNER_2" name="Build ASPNET app" type="DockerCommand">
+        <parameters>
+          <param name="docker.command.type" value="build" />
+          <param name="docker.image.namesAndTags" value="aspnetapp:%build.number%" />
+          <param name="docker.push.remove.image" value="true" />
+          <param name="dockerImage.platform" value="linux" />
+          <param name="dockerfile.path" value="mvctest/dotnet.dockerfile" />
+          <param name="dockerfile.source" value="PATH" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+    </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="TcVcs_HttpsGithubComMiso484tcVcsRefsHeadsMaster" />
     </vcs-settings>
