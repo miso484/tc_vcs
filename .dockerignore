@@ -1,0 +1,6 @@
+### Docker ignore
+## Ignore build results
+
+# .NET Core
+bin\
+obj\
