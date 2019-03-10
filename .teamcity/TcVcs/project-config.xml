@@ -12,6 +12,13 @@
         <param name="showChanges" value="true" />
       </parameters>
     </extension>
+    <extension id="PROJECT_EXT_4" type="OAuthProvider">
+      <parameters>
+        <param name="displayName" value="Docker Registry" />
+        <param name="providerType" value="Docker" />
+        <param name="repositoryUrl" value="http://172.22.22.5:5000" />
+      </parameters>
+    </extension>
   </project-extensions>
   <cleanup />
 </project>
