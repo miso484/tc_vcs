@@ -22,7 +22,7 @@
       <runner id="RUNNER_3" name="Push ASPNET image" type="DockerCommand">
         <parameters>
           <param name="docker.command.type" value="push" />
-          <param name="docker.image.namesAndTags" value="172.22.22.5:5000/aspnetapp:1.0.%build.number%" />
+          <param name="docker.image.namesAndTags" value="aspnetapp:1.0.%build.number% 172.22.22.5:5000/aspnetapp:1.0.%build.number%" />
           <param name="docker.push.remove.image" value="true" />
           <param name="dockerfile.source" value="PATH" />
           <param name="teamcity.step.mode" value="default" />
